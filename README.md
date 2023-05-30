@@ -1,6 +1,8 @@
 # Telegram for Piecewise
 
-This is an "officially-unofficial" addon for [Piecewise](https://piecewise.im/), a tool that allows you to build chat bots with blocks.
+This is an addon that adds Telegram support to [Piecewise](https://piecewise.im/), a tool that allows you to build chat bots with blocks.
+
+While it's developed by Piecewise Labs for Piecewise, it's not an officially supported addon. Feel free to ask questions and contribute, but support will be limited.
 
 ## Use it
 
