@@ -28,7 +28,7 @@ export default `
                 tgt = target.chat.id;
                 addl = { replyToMessage: target.message_id };
             } else if( target.type ){ // probably a channel?
-                tgt = tgt.id;
+                tgt = target.id;
             } else {
                 throw new Exception("not yet implemented");
             }

@@ -4,7 +4,7 @@ export default Blockly => {
     return {
         block: {
             "type": "telegram_event_channel",
-            "message0": "%1 🔔 channel",
+            "message0": "%1 🔔 chat",
             "args0": [
                 {
                     "type": "field_image",

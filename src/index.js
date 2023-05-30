@@ -1,3 +1,6 @@
+import telegram_channel_from_id from "./blocks/telegram_channel_from_id";
+import telegram_channel_properties from "./blocks/telegram_channel_properties";
+import telegram_channel_type from "./blocks/telegram_channel_type";
 import telegram_command from "./blocks/telegram_command";
 import telegram_config from "./blocks/telegram_config";
 import telegram_event_arguments from "./blocks/telegram_event_arguments";
@@ -23,5 +26,8 @@ export default class TelegramPlugin extends LazuritePlugin {
         this.addBlock(telegram_event_arguments(Blockly));
         this.addBlock(telegram_photo(Blockly));
         this.addBlock(telegram_sticker(Blockly));
+        this.addBlock(telegram_channel_from_id(Blockly));
+        this.addBlock(telegram_channel_properties(Blockly));
+        this.addBlock(telegram_channel_type(Blockly));
     }
 }
