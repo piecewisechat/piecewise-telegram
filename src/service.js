@@ -35,6 +35,8 @@ export default `
 
             if( typeof content === 'string' ){
                 await this.bot.telegram.sendMessage(tgt, content, addl);
+            } else if( content.message_id ){
+                await this.bot.telegram.forwardMessage(tgt, content.chat.id, content.message_id, addl);
             } else if( content.photo ) {
                 if( ! content.photo.startsWith("http://") && ! content.photo.startsWith("https://") ){
                     content.photo = { source: content.photo };

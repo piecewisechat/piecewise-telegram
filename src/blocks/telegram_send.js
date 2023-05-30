@@ -28,11 +28,12 @@ export default Blockly => {
                     "type": "input_value",
                     "name": "content",
                     "required": true,
-                    "doc_description": "The content to send.",
+                    "doc_description": "The content to send. Specifying a message here will forward it to the target channel.",
                     "check": [
                         "String",
                         "telegram_photo",
-                        "telegram_sticker"
+                        "telegram_sticker",
+                        "telegram_message"
                     ]
                 }
             ],
